@@ -1,4 +1,7 @@
 import { BarChart3, Shield, Calculator, Database, TrendingUp, Zap } from "lucide-react";
+import mockupDashboard from "@/assets/mockup-dashboard.jpg";
+import mockupReports from "@/assets/mockup-reports.jpg";
+import mockupAnalytics from "@/assets/mockup-analytics.jpg";
 
 const solutions = [
   {
@@ -65,17 +68,49 @@ export const SolutionsSection = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-block p-8 bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-2xl border border-primary/20">
-            <p className="text-lg text-muted-foreground mb-4">Coming Soon: Screenshot Gallery</p>
-            <div className="flex items-center justify-center gap-4">
-              <div className="w-24 h-16 bg-primary/20 rounded border-2 border-dashed border-primary/40 flex items-center justify-center text-xs text-primary">
-                Dashboard
+          <div className="max-w-6xl mx-auto">
+            <h3 className="text-2xl font-bold mb-8 text-foreground">See Comish.AI in Action</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="group">
+                <div className="bg-card rounded-xl border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                  <img 
+                    src={mockupDashboard} 
+                    alt="Comish.AI Dashboard - Commission tracking interface with real-time data"
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="p-4">
+                    <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">Dashboard</h4>
+                    <p className="text-sm text-muted-foreground">Real-time commission tracking</p>
+                  </div>
+                </div>
               </div>
-              <div className="w-24 h-16 bg-primary/20 rounded border-2 border-dashed border-primary/40 flex items-center justify-center text-xs text-primary">
-                Reports
+              
+              <div className="group">
+                <div className="bg-card rounded-xl border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                  <img 
+                    src={mockupReports} 
+                    alt="Comish.AI Reports - Detailed commission reports and reconciliation tables"
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="p-4">
+                    <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">Reports</h4>
+                    <p className="text-sm text-muted-foreground">Comprehensive reporting</p>
+                  </div>
+                </div>
               </div>
-              <div className="w-24 h-16 bg-primary/20 rounded border-2 border-dashed border-primary/40 flex items-center justify-center text-xs text-primary">
-                Analytics
+              
+              <div className="group">
+                <div className="bg-card rounded-xl border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                  <img 
+                    src={mockupAnalytics} 
+                    alt="Comish.AI Analytics - Interactive charts and performance metrics"
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="p-4">
+                    <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">Analytics</h4>
+                    <p className="text-sm text-muted-foreground">Data-driven insights</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
