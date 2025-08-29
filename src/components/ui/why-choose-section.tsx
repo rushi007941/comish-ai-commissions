@@ -25,29 +25,29 @@ const reasons = [
 
 export const WhyChooseSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-muted/20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16 space-y-6">
-          <h2 className="text-4xl lg:text-5xl font-bold">
-            Why Choose <span className="text-primary">Comish.AI?</span>
+    <section className="tw-py-20 tw-bg-gradient-to-b tw-from-background tw-to-muted/20">
+      <div className="tw-container tw-mx-auto tw-px-6">
+        <div className="tw-text-center tw-mb-16 tw-space-y-6">
+          <h2 className="tw-text-4xl lg:tw-text-5xl tw-font-bold">
+            Why Choose <span className="tw-text-primary">Comish.AI?</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
             We understand the insurance brokerage industry because we built this platform specifically for you.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
+        <div className="tw-max-w-4xl tw-mx-auto">
+          <div className="tw-grid md:tw-grid-cols-2 tw-gap-8">
             {reasons.map((reason, index) => (
-              <div key={index} className="group flex gap-6 p-8 bg-card rounded-xl border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                <div className="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <reason.icon className="h-8 w-8 text-primary" />
+              <div key={index} className="tw-group tw-flex tw-gap-6 tw-p-8 tw-bg-card tw-rounded-xl tw-border tw-border-border/50 hover:tw-border-primary/30 hover:tw-shadow-xl tw-transition-all tw-duration-300 hover:tw--translate-y-2">
+                <div className="tw-flex-shrink-0 tw-w-16 tw-h-16 tw-bg-primary/10 tw-rounded-xl tw-flex tw-items-center tw-justify-center group-hover:tw-bg-primary/20 tw-transition-colors">
+                  <reason.icon className="tw-h-8 tw-w-8 tw-text-primary" />
                 </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                <div className="tw-space-y-3">
+                  <h3 className="tw-text-xl tw-font-bold tw-text-foreground group-hover:tw-text-primary tw-transition-colors">
                     {reason.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="tw-text-muted-foreground tw-leading-relaxed">
                     {reason.description}
                   </p>
                 </div>

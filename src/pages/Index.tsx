@@ -9,7 +9,7 @@ import { Footer } from "@/components/ui/footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="tw-min-h-screen">
       <Navigation />
       <main>
         <HeroSection />

@@ -36,28 +36,28 @@ const solutions = [
 
 export const SolutionsSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-muted/30 to-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16 space-y-6">
-          <h2 className="text-4xl lg:text-5xl font-bold">
-            How <span className="text-primary">Comish.AI</span> Solves Your Problems
+    <section className="tw-py-20 tw-bg-gradient-to-b tw-from-muted/30 tw-to-background">
+      <div className="tw-container tw-mx-auto tw-px-6">
+        <div className="tw-text-center tw-mb-16 tw-space-y-6">
+          <h2 className="tw-text-4xl lg:tw-text-5xl tw-font-bold">
+            How <span className="tw-text-primary">Comish.AI</span> Solves Your Problems
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
             A smarter way to manage brokerage operations in one platform.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="tw-grid md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">
           {solutions.map((solution, index) => (
-            <div key={index} className="group p-8 bg-card rounded-xl border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="space-y-4">
-                <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors">
-                  <solution.icon className="h-8 w-8 text-primary" />
+            <div key={index} className="tw-group tw-p-8 tw-bg-card tw-rounded-xl tw-border tw-border-border/50 hover:tw-border-primary/30 hover:tw-shadow-xl tw-transition-all tw-duration-300 hover:tw--translate-y-2">
+              <div className="tw-space-y-4">
+                <div className="tw-flex tw-items-center tw-justify-center tw-w-16 tw-h-16 tw-bg-primary/10 tw-rounded-xl group-hover:tw-bg-primary/20 tw-transition-colors">
+                  <solution.icon className="tw-h-8 tw-w-8 tw-text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                <h3 className="tw-text-xl tw-font-bold tw-text-foreground group-hover:tw-text-primary tw-transition-colors">
                   {solution.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="tw-text-muted-foreground tw-leading-relaxed">
                   {solution.description}
                 </p>
               </div>
@@ -65,13 +65,13 @@ export const SolutionsSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-card rounded-2xl border border-border/50 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 overflow-hidden">
+        <div className="tw-mt-16 tw-text-center">
+          <div className="tw-max-w-4xl tw-mx-auto">
+            <div className="tw-bg-card tw-rounded-2xl tw-border tw-border-border/50 hover:tw-border-primary/30 hover:tw-shadow-2xl tw-transition-all tw-duration-500 tw-overflow-hidden">
               <img 
                 src={mockupComplete} 
                 alt="Comish.AI Platform Screenshot"
-                className="w-full h-auto object-cover"
+                className="tw-w-full tw-h-auto tw-object-cover"
               />
             </div>
           </div>

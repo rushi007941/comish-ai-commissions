@@ -29,26 +29,26 @@ const challenges = [
 
 export const ChallengesSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-muted/30">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16 space-y-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
+    <section className="tw-py-20 tw-bg-gradient-to-b tw-from-background tw-to-muted/30">
+      <div className="tw-container tw-mx-auto tw-px-6">
+        <div className="tw-text-center tw-mb-16 tw-space-y-6">
+          <h2 className="tw-text-4xl lg:tw-text-5xl tw-font-bold tw-text-foreground">
             Tired of chasing commissions across 
-            <span className="block text-destructive">multiple insurers?</span>
+            <span className="tw-block tw-text-destructive">multiple insurers?</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
             Insurance brokers face countless challenges that slow down growth and impact profitability.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="tw-grid md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8 tw-mb-16">
           {challenges.map((challenge, index) => (
-            <div key={index} className="group p-8 bg-card rounded-xl border border-border/50 hover:border-destructive/30 hover:shadow-lg transition-all duration-300">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 p-3 bg-destructive/10 rounded-lg group-hover:bg-destructive/20 transition-colors">
-                  <challenge.icon className="h-6 w-6 text-destructive" />
+            <div key={index} className="tw-group tw-p-8 tw-bg-card tw-rounded-xl tw-border tw-border-border/50 hover:tw-border-destructive/30 hover:tw-shadow-lg tw-transition-all tw-duration-300">
+              <div className="tw-flex tw-items-start tw-gap-4">
+                <div className="tw-flex-shrink-0 tw-p-3 tw-bg-destructive/10 tw-rounded-lg group-hover:tw-bg-destructive/20 tw-transition-colors">
+                  <challenge.icon className="tw-h-6 tw-w-6 tw-text-destructive" />
                 </div>
-                <p className="text-foreground font-medium leading-relaxed">
+                <p className="tw-text-foreground tw-font-medium tw-leading-relaxed">
                   {challenge.text}
                 </p>
               </div>
@@ -56,10 +56,10 @@ export const ChallengesSection = () => {
           ))}
         </div>
 
-        <div className="text-center">
-          <div className="inline-flex items-center gap-3 px-8 py-4 bg-primary/10 rounded-full border border-primary/20">
-            <AlertTriangle className="h-5 w-5 text-primary" />
-            <p className="text-lg font-semibold text-primary">
+        <div className="tw-text-center">
+          <div className="tw-inline-flex tw-items-center tw-gap-3 tw-px-8 tw-py-4 tw-bg-primary/10 tw-rounded-full tw-border tw-border-primary/20">
+            <AlertTriangle className="tw-h-5 tw-w-5 tw-text-primary" />
+            <p className="tw-text-lg tw-font-semibold tw-text-primary">
               It's time to replace spreadsheets and guesswork with automation.
             </p>
           </div>

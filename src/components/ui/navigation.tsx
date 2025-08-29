@@ -6,50 +6,50 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+    <nav className="tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-z-50 tw-bg-background/90 tw-backdrop-blur-md tw-border-b tw-border-border/50">
+      <div className="tw-container tw-mx-auto tw-px-6">
+        <div className="tw-flex tw-items-center tw-justify-between tw-h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">C</span>
+          <div className="tw-flex tw-items-center tw-gap-2">
+            <div className="tw-w-8 tw-h-8 tw-bg-primary tw-rounded-lg tw-flex tw-items-center tw-justify-center">
+              <span className="tw-text-white tw-font-bold tw-text-sm">C</span>
             </div>
-            <span className="text-xl font-bold text-foreground">Comish.AI</span>
+            <span className="tw-text-xl tw-font-bold tw-text-foreground">Comish.AI</span>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-foreground hover:text-primary transition-colors">Features</a>
-            <a href="#pricing" className="text-foreground hover:text-primary transition-colors">Pricing</a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
+          <div className="tw-hidden md:tw-flex tw-items-center tw-gap-8">
+            <a href="#features" className="tw-text-foreground hover:tw-text-primary tw-transition-colors">Features</a>
+            <a href="#pricing" className="tw-text-foreground hover:tw-text-primary tw-transition-colors">Pricing</a>
+            <a href="#about" className="tw-text-foreground hover:tw-text-primary tw-transition-colors">About</a>
+            <a href="#contact" className="tw-text-foreground hover:tw-text-primary tw-transition-colors">Contact</a>
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="tw-hidden md:tw-flex tw-items-center tw-gap-4">
             <Button variant="ghost">Login</Button>
             <Button>Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="md:tw-hidden tw-p-2"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? <X className="tw-h-6 tw-w-6" /> : <Menu className="tw-h-6 tw-w-6" />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden border-t border-border/50 py-4 space-y-4">
-            <a href="#features" className="block py-2 text-foreground hover:text-primary transition-colors">Features</a>
-            <a href="#pricing" className="block py-2 text-foreground hover:text-primary transition-colors">Pricing</a>
-            <a href="#about" className="block py-2 text-foreground hover:text-primary transition-colors">About</a>
-            <a href="#contact" className="block py-2 text-foreground hover:text-primary transition-colors">Contact</a>
-            <div className="flex flex-col gap-2 pt-4 border-t border-border/50">
-              <Button variant="ghost" className="justify-start">Login</Button>
-              <Button className="justify-start">Get Started</Button>
+          <div className="md:tw-hidden tw-border-t tw-border-border/50 tw-py-4 tw-space-y-4">
+            <a href="#features" className="tw-block tw-py-2 tw-text-foreground hover:tw-text-primary tw-transition-colors">Features</a>
+            <a href="#pricing" className="tw-block tw-py-2 tw-text-foreground hover:tw-text-primary tw-transition-colors">Pricing</a>
+            <a href="#about" className="tw-block tw-py-2 tw-text-foreground hover:tw-text-primary tw-transition-colors">About</a>
+            <a href="#contact" className="tw-block tw-py-2 tw-text-foreground hover:tw-text-primary tw-transition-colors">Contact</a>
+            <div className="tw-flex tw-flex-col tw-gap-2 tw-pt-4 tw-border-t tw-border-border/50">
+              <Button variant="ghost" className="tw-justify-start">Login</Button>
+              <Button className="tw-justify-start">Get Started</Button>
             </div>
           </div>
         )}
