@@ -36,15 +36,15 @@ export const WhyChooseSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
             {reasons.map((reason, index) => (
-              <div key={index} className="group flex gap-6 p-6 bg-card rounded-xl border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
-                <div className="flex-shrink-0 w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <reason.icon className="h-7 w-7 text-primary" />
+              <div key={index} className="group flex gap-6 p-8 bg-card rounded-xl border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div className="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <reason.icon className="h-8 w-8 text-primary" />
                 </div>
-                <div className="space-y-2">
-                  <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                     {reason.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -53,48 +53,6 @@ export const WhyChooseSection = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="space-y-8">
-            {/* Stats Card */}
-            <div className="p-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl text-white">
-              <h3 className="text-2xl font-bold mb-6">Platform Stats</h3>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold">500+</div>
-                  <div className="text-primary-foreground/80">Active Brokers</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold">₹100Cr+</div>
-                  <div className="text-primary-foreground/80">Commissions Tracked</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold">99.9%</div>
-                  <div className="text-primary-foreground/80">Accuracy Rate</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold">24/7</div>
-                  <div className="text-primary-foreground/80">Support</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial Card */}
-            <div className="p-8 bg-card rounded-2xl border border-border/50">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold">RK</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-foreground">Rajesh Kumar</h4>
-                  <p className="text-sm text-muted-foreground">Senior Insurance Broker</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground italic leading-relaxed">
-                "Comish.AI transformed our operations completely. What used to take us 3 days now takes 30 minutes. 
-                The accuracy and time savings are incredible!"
-              </p>
-            </div>
           </div>
         </div>
       </div>

@@ -62,18 +62,6 @@ export const BenefitsSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-6 p-6 bg-gradient-to-r from-primary to-primary/80 rounded-2xl text-white">
-            <div className="text-left">
-              <p className="text-lg font-semibold">Ready to see these benefits in action?</p>
-              <p className="text-primary-foreground/80">Join hundreds of successful brokers</p>
-            </div>
-            <div className="text-right">
-              <div className="text-2xl font-bold">₹10L+</div>
-              <div className="text-sm text-primary-foreground/80">Average annual savings</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
